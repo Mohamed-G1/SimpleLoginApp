@@ -1,7 +1,6 @@
 package com.example.loginsample.base
 
-import com.example.loginsample.network.RemoteDataSource
-import com.example.loginsample.network.Resource
+import com.example.loginsample.data.network.Resource
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.withContext
 import retrofit2.HttpException
@@ -17,7 +16,7 @@ abstract class BaseRepository {
             } catch (throwable : Throwable){
                 when (throwable){
                     is HttpException ->{
-                        Resource.Failure(false,throwable.code(), throwable.response()?.errorBody())
+                        Resource.Failure(false,throwable.code(), throwable.response()?.errorBody() )
                     }
                     else -> {
                         Resource.Failure(true, null,null)

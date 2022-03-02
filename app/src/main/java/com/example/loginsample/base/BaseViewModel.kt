@@ -3,7 +3,7 @@ package com.example.loginsample.base
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.example.loginsample.auth.ui.login.AuthViewModel
-import com.example.loginsample.repositories.AuthRepository
+import com.example.loginsample.data.repositories.AuthRepository
 
 @Suppress("UNCHECKED_CAST")
 class BaseViewModel(

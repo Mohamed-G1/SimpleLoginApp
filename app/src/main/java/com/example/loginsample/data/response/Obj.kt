@@ -1,4 +1,4 @@
-package com.example.loginsample.response
+package com.example.loginsample.data.response
 
 data class Obj(
     val Id: String,

@@ -1,6 +1,6 @@
-package com.example.loginsample.network
+package com.example.loginsample.data.network
 
-import com.example.loginsample.response.LoginResponse
+import com.example.loginsample.data.response.LoginResponse
 import retrofit2.http.Field
 import retrofit2.http.FormUrlEncoded
 import retrofit2.http.POST

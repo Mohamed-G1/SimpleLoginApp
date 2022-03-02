@@ -1,4 +1,4 @@
-package com.example.loginsample.network
+package com.example.loginsample.data.network
 
 import okhttp3.ResponseBody
 
